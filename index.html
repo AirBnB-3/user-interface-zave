@@ -11,9 +11,9 @@
                 <img src="assets/images/logo.png" alt="red airbnb logo">
             </div>
             <nav id="navbar">
-                <a href="./index.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="" id="last">Sign In</a> 
+                <a href="./index.html" class="nav-button">Home</a>
+                <a href="./about.html" class="nav-button">About</a>
+                <a href="" id="last" class="nav-button">Sign In</a> 
             </nav>
             </div>
         </header>
@@ -21,12 +21,12 @@
 
             <section id="top-landing">
                 <div id="top">
-                    <img src="./assets/images/top-img.jpg" alt="living room with a couch, coffee table and paintings">
+                    <img id="landing-img" src="./assets/images/top-img.jpg" alt="living room with a couch, coffee table and paintings">
                     <div id="top-welcome" >
-                        <h1>Welcome</h1>
+                        <h1 id="ani">OptiPricer</h1>
                         <p>
-                            welcome to the site everyone uses to determine the best ratefor their listing. It's easy, free and packed with features that 
-                            will help anyone new to listing and seasoned veterans in this field of work.
+                            Welcome to the site everyone uses to determine the best rate for their listing. It's easy, free and packed with features that 
+                            will help anyone new to listing or seasoned veterans in this field of work.
                         </p>
                         <a>Sign up today!</a>
                     </div>
@@ -34,31 +34,29 @@
             </section>
 
             <section id="product-description">
-                <h3>This is a detailed description of the product</h3>
-                <p> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum eu ligula sed laoreet. 
-                    Cras ut quam nunc. Pellentesque id sollicitudin sem, a posuere dui. Praesent tincidunt erat ut eros pellentesque viverra. 
-                    Pellentesque quis interdum est. Nullam erat elit, maximus a nisl eget, pellentesque ornare dolor. In sit amet dolor at libero
-                    aliquam malesuada sed vel turpis. Nulla bibendum faucibus mauris ut tempor. Maecenas luctus, nunc consectetur auctor fermentum, 
-                    mauris tortor consectetur diam, a consequat elit lacus nec libero. Aenean vel dapibus libero, in volutpat nibh.
+                <h3 id="product-description-title">What OptiPricer does</h3>
+                <p id="product-description-content"> 
+                    OptiPricer provides a way for you to confidently price you Airbnb location with data from around the world. 
+                    By finding out what other places around you are pricing their locations at, this gives you the choice
+                    to price like your peers or competitively to keep you location generating money.
                 </p>
             </section>
 
             <section id="feature-set">
-                <div>
+                <div class="cards">
                     <img src="./assets/icons/placeholder.png" alt="">
-                    <h3>this is feature xyz</h3>
-                    <p>This is a breif description of the feature that is presented</p>
+                    <h3>See Local Prices</h3>
+                    <p>View local pricing from anywhere around the world</p>
                 </div>
-                <div>
+                <div class="cards">
                     <img src="./assets/icons/house.png" alt="">
-                    <h3>this is feature xyz</h3>
-                    <p>This is a breif description of the feature that is presented</p>
+                    <h3>Price Better</h3>
+                    <p>Just by inputing your location information, OptiPricer can provide you the best price</p>
                 </div>
-                <div>
+                <div class="cards">
                     <img src="./assets/icons/photo-camera.png" alt="">
-                    <h3>this is feature xyz</h3>
-                    <p>This is a breif description of the feature that is presented</p>
+                    <h3>Add Photos</h3>
+                    <p>Show off your location with photos in Optipricer</p>
                 </div>
             </section>
 
@@ -66,6 +64,7 @@
         <footer>
             Made with &#9829; -Z 
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
         <script src="./scripts/index.js"></script>
     </body>
 </html>
