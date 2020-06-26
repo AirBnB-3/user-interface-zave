@@ -189,6 +189,7 @@ section{
     font-size: 4rem;
     border-right: 1px solid rgba(105, 105, 105, 0.1);
     padding-right: 5%;
+    line-height: 1.2;
 }
 #product-description p{
     font-size: 1.8rem;
@@ -211,7 +212,7 @@ section{
     border-right: 4px solid rgba(105, 105, 105, 0.1);
     border-radius: 20px;
     text-align: center;
-    justify-content: center;    
+    justify-content: baseline   ;    
     padding: 2% 0;
     margin: 5% 0;
 }
@@ -221,6 +222,8 @@ section{
 }
 #feature-set h3{
     margin: 5% 0;
+    color: #FF5A5F;
+
 }
 #feature-set p{
     font-size: 1.6rem;
@@ -241,7 +244,8 @@ footer {
 
 }
 
-@media (max-width: 500px) {
+
+@media (max-width: 800px) {
     header{ 
         width: 100%;
     }
@@ -256,7 +260,6 @@ footer {
         flex-wrap: wrap;
         justify-content: space-evenly;
         width: 90%;
-        margin-bottom: 15%;
         margin-top: 8%;
     }
     #top h1{
@@ -299,6 +302,7 @@ footer {
     #feature-set h3{
         margin: 15% 0;
         border-right: 0;
+        font-size: 1.4rem;
     }
     #feature-set p{
         font-size: 1.2rem;
@@ -311,7 +315,12 @@ footer {
         font-size: 1.6rem;
     }
 }
-
+@media (max-width: 500px){
+    #top{
+        margin-bottom: 15%;
+    }
+    
+}
 /*-------------------------------  about.html  -----------------------------------*/
 #top-about{
     display: flex;
@@ -333,6 +342,10 @@ footer {
     width: 86%;
     
 }
+#team p{
+    font-size: 1.5rem;
+    color: #FF5A5F;
+}
 #team-title{
     width: 8%;
 }
@@ -343,7 +356,6 @@ footer {
     justify-content: space-evenly;
     width: 85%;
     border-left: 1px solid rgba(105, 105, 105, 0.1);
-
 }
 #team-list div{
     width: 20%;
@@ -353,6 +365,10 @@ footer {
     text-align: center;
     padding: 3%;
     margin: 2%;
+}
+#team-list img{
+    width: 80%;
+    border-radius: 20px;
 }
 #mission {
     display: flex;
@@ -377,7 +393,8 @@ footer {
     line-height: 2;
     padding-right: 2%;
 }
-@media (max-width: 500px) {
+
+@media (max-width: 800px) {
     #top-about{
         width: 85%;
     }
@@ -404,6 +421,9 @@ footer {
         width: 90%;
         align-items: center;
     }
+    #team p{
+        font-size: 1rem;
+    }
     #team-title{
         width: 30%;
     }
@@ -418,8 +438,14 @@ footer {
         width: 100%
     }
     #team-list div{
-        width: 20%
-        
+        width: 20%   
+    }
+    #team-list img{
+        width: 80%;
+        border-radius: 10px;
+    }
+    #mission-title{
+        margin-bottom: 2%;
     }
     #mission-content{
         display: flex;
